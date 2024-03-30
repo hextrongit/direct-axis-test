@@ -18,7 +18,11 @@ function DataProvider({ children }) {
   const fetchAllProducts = () => {
     setLoading(true);
     axios
-      .get("https://fakestoreapi.com/products")
+      .get("https://fakestoreapi.com/products", {
+        headers: {
+          Accept: "application/json, text/plain, */*", // Include headers here
+        },
+      })
       .then((response) => {
         setAllProducts(response.data);
         setLoading(false);
@@ -35,7 +39,11 @@ function DataProvider({ children }) {
   const fetchProductDetails = (id) => {
     setLoading(true);
     axios
-      .get(`https://fakestoreapi.com/products/${id}`)
+      .get(`https://fakestoreapi.com/products/${id}`, {
+        headers: {
+          Accept: "application/json, text/plain, */*", // Include headers here
+        },
+      })
       .then((response) => {
         setProductDetails(response.data);
         setLoading(false);
