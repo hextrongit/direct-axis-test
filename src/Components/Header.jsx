@@ -33,7 +33,7 @@ function Header() {
 
   return (
     <>
-      <Navbar bg="primary" data-bs-theme="dark">
+      <Navbar bg="primary" data-bs-theme="dark" fixed="top">
         <Container className="container nav-container">
           <Navbar.Brand as={Link} to="/home" className="heading">
             Direct Axis
