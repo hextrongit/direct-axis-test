@@ -17,3 +17,21 @@ for installation of Bootstrap and SASS we used
 
 4. npm i --save bootstrap @popperjs/core
 5. npm i --save-dev sass
+6. npm install react-bootstrap bootstrap
+
+for Routing we use react router dom
+
+7. npm install react-router-dom
+
+for Form and Form validation we use Formik and yup
+
+8. npm install formik yup
+
+for API calls we use Axios
+
+9. npm i axios
+
+Project build completed
+
+- Code pushed to Github
+- repository - direct-axis-test
